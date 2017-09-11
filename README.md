@@ -1,5 +1,9 @@
 # VC_openSource
-分享一套vc++的实例源代码，有几十个，分了15类
+分享一套vc++的实例源代码，有几十个，分了15类<br>
+
+分享者:  CSDN版主:caozhy  http://my.csdn.net/caozhy   <br>
+
+代码CSDN下载地址: http://download.csdn.net/detail/caozhy/9918664  (1积分)<br>
 
 #源码目录
 
