@@ -1,0 +1,34 @@
+HKCR
+{
+	Gif.CGif.1 = s 'CGif Class'
+	{
+		CLSID = s '{55237D6B-AFA9-4C08-B894-1C8CCBBA029C}'
+	}
+	Gif.CGif = s 'CGif Class'
+	{
+		CLSID = s '{55237D6B-AFA9-4C08-B894-1C8CCBBA029C}'
+		CurVer = s 'Gif.CGif.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {55237D6B-AFA9-4C08-B894-1C8CCBBA029C} = s 'CGif Class'
+		{
+			ProgID = s 'Gif.CGif.1'
+			VersionIndependentProgID = s 'Gif.CGif'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove 'Control'
+			ForceRemove 'Insertable'
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 102'
+			'MiscStatus' = s '0'
+			{
+			    '1' = s '131473'
+			}
+			'TypeLib' = s '{29117CB0-F3A1-4012-AC94-9664147FD6FC}'
+			'Version' = s '1.0'
+		}
+	}
+}

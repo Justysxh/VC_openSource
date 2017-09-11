@@ -1,0 +1,286 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PrintLeave.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PrintLeave.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 PrintLeave"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PrintLeave 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PRINTLEAVE_DIALOG DIALOGEX 0, 0, 456, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "PrintLeave"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,16,23,423,149
+    LTEXT           "请假条",IDC_STATIC,215,37,25,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,26,51,404,111
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,26,51,62,17
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,87,51,63,17
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,150,51,30,17
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,179,51,55,17
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,234,51,46,17
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,279,51,47,17
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,326,51,48,17
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,374,51,56,17
+    LTEXT           "请假人姓名",IDC_STATIC,37,56,41,8
+    LTEXT           "职位",IDC_STATIC,156,56,20,8
+    LTEXT           "所属部门",IDC_STATIC,240,56,35,8
+    LTEXT           "请/销假日期",IDC_STATIC,327,56,44,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,26,68,62,35
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,87,68,239,18
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,87,85,239,18
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,326,68,104,35
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,26,103,62,17
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,87,103,342,17
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,26,145,134,17
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,159,145,136,17
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,295,145,134,17
+    LTEXT           "请假时间",IDC_STATIC,37,81,33,8
+    LTEXT           "请假类型",IDC_STATIC,37,108,33,8
+    LTEXT           "部门经理签字：",IDC_STATIC,29,150,57,8
+    LTEXT           "总经理签字：",IDC_STATIC,162,150,49,8
+    LTEXT           "考勤人员签收：",IDC_STATIC,298,150,57,8
+    LTEXT           "开始日期：",IDC_STATIC,89,73,41,8
+    EDITTEXT        IDC_EDIT1,131,70,20,14,ES_AUTOHSCROLL
+    LTEXT           "年",IDC_STATIC,154,73,10,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT2,165,70,20,14,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    LTEXT           "月",IDC_STATIC,187,73,10,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT3,199,70,20,14,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    LTEXT           "日",IDC_STATIC,220,73,10,8,0,WS_EX_TRANSPARENT
+    LTEXT           "时间：",IDC_STATIC,236,73,25,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT4,262,70,20,14,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    LTEXT           "时",IDC_STATIC,284,73,10,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT5,294,70,20,14,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    LTEXT           "分",IDC_STATIC,315,73,10,8,0,WS_EX_TRANSPARENT
+    LTEXT           "结束日期：",IDC_STATIC,89,91,41,8
+    EDITTEXT        IDC_EDIT6,131,88,20,14,ES_AUTOHSCROLL
+    LTEXT           "年",IDC_STATIC,154,91,10,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT7,165,88,20,14,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    LTEXT           "月",IDC_STATIC,187,91,10,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT8,199,88,20,14,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    LTEXT           "日",IDC_STATIC,220,91,10,8,0,WS_EX_TRANSPARENT
+    LTEXT           "时间：",IDC_STATIC,236,91,25,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT9,261,88,20,14,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    LTEXT           "时",IDC_STATIC,284,91,10,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT10,294,88,20,14,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    LTEXT           "分",IDC_STATIC,316,90,10,8,0,WS_EX_TRANSPARENT
+    LTEXT           "总共请假：",IDC_STATIC,328,71,44,8
+    EDITTEXT        IDC_EDIT11,328,85,20,14,ES_AUTOHSCROLL
+    LTEXT           "天",IDC_STATIC,351,89,10,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT12,362,86,20,14,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    LTEXT           "时",IDC_STATIC,384,89,10,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT13,395,86,20,14,ES_AUTOHSCROLL,WS_EX_TRANSPARENT
+    LTEXT           "分",IDC_STATIC,417,89,10,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT14,90,53,57,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT15,182,53,49,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT16,282,53,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT17,376,53,50,14,ES_AUTOHSCROLL
+    LTEXT           "请假事由（必须填写）",IDC_STATIC,29,122,81,8
+    EDITTEXT        IDC_EDIT18,111,125,311,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT19,90,147,57,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT20,211,147,57,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT21,356,147,57,14,ES_AUTOHSCROLL
+    CONTROL         "事假",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    92,107,32,10
+    CONTROL         "病假",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    129,107,32,10
+    CONTROL         "婚假",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    164,107,32,10
+    CONTROL         "丧假",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    197,107,32,10
+    CONTROL         "娩假",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    230,107,32,10
+    CONTROL         "其他（请说明）",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,263,107,72,10
+    EDITTEXT        IDC_EDIT22,338,105,86,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "打印",IDC_BUTTON1,273,175,50,14
+    PUSHBUTTON      "关闭",IDC_BUTTON2,345,175,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PrintLeave Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "PrintLeave\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PrintLeave.EXE\0"
+            VALUE "ProductName", "PrintLeave 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PRINTLEAVE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 449
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 PrintLeave(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\PrintLeave.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

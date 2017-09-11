@@ -1,0 +1,3 @@
+server database usr pwd 
+mr personal sys   
+web number admin q90o 

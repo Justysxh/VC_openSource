@@ -1,0 +1,258 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FingerExercise.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\FingerExercise.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 FingerExercise"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "FingerExercise 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_FINGEREXERCISE_DIALOG DIALOGEX 0, 0, 513, 381
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "指法练习软件"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "开始",IDC_BUTSTART,443,253,50,14,BS_BITMAP | BS_FLAT
+    PUSHBUTTON      "退出",IDC_BUTEXIT,443,307,50,14,BS_BITMAP | BS_FLAT
+    PUSHBUTTON      "取消",IDC_BUTCANCEL,443,280,50,14,BS_BITMAP | BS_FLAT
+    EDITTEXT        IDC_TIME,436,32,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SUMNUM,436,54,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ERRORNUM,436,75,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOSENUM,436,96,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VERACITY,436,117,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RATE,436,140,65,12,ES_AUTOHSCROLL
+    CONTROL         "设置练习时间：",IDC_STATIC,"Static",SS_SIMPLE | 
+                    WS_GROUP,436,164,57,8
+    EDITTEXT        IDC_TIMING,436,183,35,12,ES_AUTOHSCROLL
+    CONTROL         "分钟",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,480,185,
+                    17,8
+    CONTROL         "下降间隔时间：",IDC_STATIC,"Static",SS_SIMPLE | 
+                    WS_GROUP,436,207,57,8
+    EDITTEXT        IDC_ALTERNATION,436,224,35,12,ES_AUTOHSCROLL
+    LTEXT           "毫秒",IDC_STATIC,480,225,17,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "FingerExercise Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "FingerExercise\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FingerExercise.EXE\0"
+            VALUE "ProductName", "FingerExercise 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FINGEREXERCISE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 506
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 374
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAPBK            BITMAP  DISCARDABLE     "res\\背景.bmp"
+IDB_BITMAPA             BITMAP  DISCARDABLE     "res\\a.bmp"
+IDB_BITMAPB             BITMAP  DISCARDABLE     "res\\b.bmp"
+IDB_BITMAPC             BITMAP  DISCARDABLE     "res\\c.bmp"
+IDB_BITMAPD             BITMAP  DISCARDABLE     "res\\d.bmp"
+IDB_BITMAPE             BITMAP  DISCARDABLE     "res\\e.bmp"
+IDB_BITMAPF             BITMAP  DISCARDABLE     "res\\f.bmp"
+IDB_BITMAPG             BITMAP  DISCARDABLE     "res\\g.bmp"
+IDB_BITMAPH             BITMAP  DISCARDABLE     "res\\h.bmp"
+IDB_BITMAPI             BITMAP  DISCARDABLE     "res\\i.bmp"
+IDB_BITMAPJ             BITMAP  DISCARDABLE     "res\\j.bmp"
+IDB_BITMAPK             BITMAP  DISCARDABLE     "res\\k.bmp"
+IDB_BITMAPL             BITMAP  DISCARDABLE     "res\\l.bmp"
+IDB_BITMAPM             BITMAP  DISCARDABLE     "res\\m.bmp"
+IDB_BITMAPN             BITMAP  DISCARDABLE     "res\\n.bmp"
+IDB_BITMAPO             BITMAP  DISCARDABLE     "res\\o.bmp"
+IDB_BITMAPP             BITMAP  DISCARDABLE     "res\\p.bmp"
+IDB_BITMAPQ             BITMAP  DISCARDABLE     "res\\q.bmp"
+IDB_BITMAPR             BITMAP  DISCARDABLE     "res\\r.bmp"
+IDB_BITMAPS             BITMAP  DISCARDABLE     "res\\s.bmp"
+IDB_BITMAPT             BITMAP  DISCARDABLE     "res\\t.bmp"
+IDB_BITMAPU             BITMAP  DISCARDABLE     "res\\u.bmp"
+IDB_BITMAPV             BITMAP  DISCARDABLE     "res\\v.bmp"
+IDB_BITMAPW             BITMAP  DISCARDABLE     "res\\w.bmp"
+IDB_BITMAPX             BITMAP  DISCARDABLE     "res\\x.bmp"
+IDB_BITMAPY             BITMAP  DISCARDABLE     "res\\y.bmp"
+IDB_BITMAPZ             BITMAP  DISCARDABLE     "res\\z.bmp"
+IDB_START               BITMAP  DISCARDABLE     "res\\开始.bmp"
+IDB_CANCEL              BITMAP  DISCARDABLE     "res\\取消.bmp"
+IDB_EXIT                BITMAP  DISCARDABLE     "res\\退出.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 FingerExercise(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\FingerExercise.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

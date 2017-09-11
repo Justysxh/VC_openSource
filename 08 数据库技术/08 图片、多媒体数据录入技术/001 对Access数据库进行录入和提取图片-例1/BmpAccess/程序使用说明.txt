@@ -1,0 +1,4 @@
+在使用ADO技术时，需要导入一个ADO动态链接库msado15.dll，该动态库位于系统盘下的“Program Files\Common Files\System\ado\”目录下。
+
+
+例：如果你的系统盘为C盘，则该文件位于“C:\Program Files\Common Files\System\ado”目录中。所以需要打开工程文件，并展开“FileView”视图中的“Header Files”节点，然后双击“StdAfx.h”文件，将代码中的“d:\Program Files\Common Files\System\ado\msado15.dll”改为“c:\Program Files\Common Files\System\ado\msado15.dll”。

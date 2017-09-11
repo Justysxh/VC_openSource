@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--MyXML-->
+<database>
+<filed id="001">
+<name>mingri</name>
+<type>soft</type>
+</filed>
+<filed id="002">
+<name>me</name>
+<type>all</type>
+</filed>
+</database>

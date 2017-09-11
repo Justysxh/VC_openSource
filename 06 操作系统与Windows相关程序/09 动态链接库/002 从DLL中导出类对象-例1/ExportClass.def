@@ -1,0 +1,7 @@
+
+LIBRARY      "ExportClass"
+DESCRIPTION  'ExportClass Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+GetMinCommMul;

@@ -1,0 +1,365 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CheckAttendance.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CheckAttendance.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\BE DRAW.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 CheckAttendance"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CheckAttendance 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CHECKATTENDANCE_DIALOG DIALOGEX 0, 0, 359, 227
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "明日IC卡考勤系统"
+MENU IDR_MAINMENU
+FONT 9, "宋体"
+BEGIN
+    CONTROL         137,IDC_STATIC,"Static",SS_BITMAP,0,23,359,203
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 205, 110
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "卡片设置"
+FONT 9, "System"
+BEGIN
+    GROUPBOX        "信息设置",IDC_STATIC,5,2,195,68
+    LTEXT           "卡片ID：",IDC_STATIC,30,23,32,8
+    CONTROL         "",IDC_CARDID,"Static",SS_LEFTNOWORDWRAP | SS_NOTIFY | 
+                    WS_GROUP,64,19,104,15,WS_EX_STATICEDGE
+    PUSHBUTTON      "生成ID",IDC_GENERATEID,55,75,42,12,BS_FLAT
+    PUSHBUTTON      "写入数据",IDC_WRITE,105,75,42,12,BS_FLAT | WS_DISABLED
+    PUSHBUTTON      "刷卡",IDC_REFRESHCARD,155,75,42,12,BS_FLAT
+END
+
+IDD_EMPLOYEE_DIALOG DIALOG DISCARDABLE  0, 0, 217, 178
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "员工信息添加"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_WORDID,71,19,99,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WORDERNAME,71,41,99,17,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SEX,71,62,100,60,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_DUTY,71,81,99,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ICID,71,101,99,17,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "刷卡",IDC_REFRESH,174,102,25,16
+    PUSHBUTTON      "添加",IDC_ADD,58,139,45,15,BS_FLAT
+    PUSHBUTTON      "取消",IDC_BUTTONCANCEL,111,139,45,15,BS_FLAT
+    PUSHBUTTON      "退出",IDC_EXIT,164,139,45,15,BS_FLAT
+    GROUPBOX        "员工基础信息",IDC_STATIC,5,5,205,125
+    LTEXT           "员工编号",IDC_STATIC,28,23,41,8
+    LTEXT           "员工姓名",IDC_STATIC,28,45,41,8
+    LTEXT           "员工性别",IDC_STATIC,28,64,41,8
+    LTEXT           "员工职务",IDC_STATIC,28,84,41,8
+    LTEXT           "IC卡号",IDC_STATIC,34,104,33,8
+END
+
+IDD_REFRESHCARD_DIALOG DIALOG DISCARDABLE  0, 0, 223, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "考勤窗口"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "员工信息",IDC_STATIC,8,6,207,124
+    LTEXT           "员工编号",IDC_STATIC,29,24,37,8
+    LTEXT           "员工姓名",IDC_STATIC,29,40,41,8
+    EDITTEXT        IDC_WORDID,75,19,99,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WORDERNAME,75,40,99,17,ES_AUTOHSCROLL
+    COMBOBOX        IDC_SEX,75,61,100,60,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_DUTY,75,77,99,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ICID,75,98,99,17,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "员工性别",IDC_STATIC,29,60,41,8
+    LTEXT           "员工职务",IDC_STATIC,29,81,41,8
+    LTEXT           "IC卡号",IDC_STATIC,36,100,33,8
+    LTEXT           "",IDC_HINT,9,140,202,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CheckAttendance Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CheckAttendance\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CheckAttendance.EXE\0"
+            VALUE "ProductName", "CheckAttendance 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CHECKATTENDANCE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 352
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 220
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_EMPLOYEE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_REFRESHCARD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 178
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "系统"
+    BEGIN
+        MENUITEM "系统登录",                    ID_MENUITEM32771
+        MENUITEM "系统退出",                    ID_MENUITEMEXIT
+    END
+    POPUP "卡片管理"
+    BEGIN
+        MENUITEM "新卡设置",                    ID_CARTSET
+    END
+    POPUP "员工信息管理"
+    BEGIN
+        MENUITEM "员工信息添加",                ID_MENUADD
+        MENUITEM "员工信息删除",                ID_MENUDELETE
+    END
+    POPUP "刷卡管理"
+    BEGIN
+        MENUITEM "刷卡记录",                    ID_MENUCHECK
+    END
+    MENUITEM "帮助",                        65535
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_EMPLOYEE_DIALOG DLGINIT
+BEGIN
+    IDC_SEX, 0x403, 3, 0
+0xd0c4, "\000" 
+    IDC_SEX, 0x403, 3, 0
+0xaec5, "\000" 
+    0
+END
+
+IDD_REFRESHCARD_DIALOG DLGINIT
+BEGIN
+    IDC_SEX, 0x403, 3, 0
+0xd0c4, "\000" 
+    IDC_SEX, 0x403, 3, 0
+0xaec5, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR DISCARDABLE  20, 20
+BEGIN
+    BUTTON      ID_CARTSET
+    BUTTON      ID_MENUADD
+    SEPARATOR
+    BUTTON      ID_MENUDELETE
+    BUTTON      ID_MENUCHECK
+    SEPARATOR
+    BUTTON      ID_MENUITEMEXIT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR             BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\IC卡考勤系统界面.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 CheckAttendance(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\CheckAttendance.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

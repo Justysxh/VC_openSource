@@ -1,0 +1,281 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ClearGarbage.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ClearGarbage.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\71.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ClearGarbage"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "ClearGarbage 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CLEARGARBAGE_DIALOG DIALOGEX 0, 0, 377, 388
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "垃圾文件清理工具"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_SCANEINFO,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,11,166,219
+    GROUPBOX        "扫描文件",IDC_STATIC,186,7,184,60
+    GROUPBOX        "临时文件列表",IDC_STATIC,186,71,184,259
+    CONTROL         "~*.*",IDC_TMP1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,85,32,10
+    LTEXT           "临时文件",IDC_STATIC,252,86,33,8
+    CONTROL         "*.tmp",IDC_TMP2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,97,36,10
+    LTEXT           "临时文件",IDC_STATIC,252,98,33,8
+    CONTROL         "*.~*",IDC_TMP3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,109,32,10
+    LTEXT           "临时文件",IDC_STATIC,252,110,33,8
+    CONTROL         "*.bak",IDC_TMP4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,121,36,10
+    LTEXT           "临时备份文件",IDC_STATIC,252,122,49,8
+    CONTROL         "*.??~",IDC_TMP5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,133,36,10
+    LTEXT           "临时文件",IDC_STATIC,252,134,33,8
+    CONTROL         "*.??$",IDC_TMP6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,145,36,10
+    LTEXT           "临时文件",IDC_STATIC,252,146,33,8
+    CONTROL         "*.ftg",IDC_TMP7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,157,36,10
+    LTEXT           "临时帮助文件",IDC_STATIC,252,158,49,8
+    CONTROL         "*.fts",IDC_TMP8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,169,36,10
+    LTEXT           "临时帮助文件",IDC_STATIC,252,170,49,8
+    CONTROL         "*.gid",IDC_TMP9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,181,36,10
+    LTEXT           "临时帮助文件",IDC_STATIC,252,182,49,8
+    CONTROL         "*.old",IDC_TMP10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,193,36,10
+    LTEXT           "旧备份文件",IDC_STATIC,252,194,41,8
+    CONTROL         "*.chk",IDC_TMP11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,205,36,10
+    LTEXT           "丢失簇的恢复文件",IDC_STATIC,252,206,65,8
+    CONTROL         "*._mp",IDC_TMP12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,217,36,10
+    LTEXT           "临时文件",IDC_STATIC,252,218,33,8
+    CONTROL         "*.syd",IDC_TMP13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,229,36,10
+    LTEXT           "临时文件",IDC_STATIC,252,230,33,8
+    CONTROL         "*.ms",IDC_TMP14,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,241,32,10
+    LTEXT           "微软备份文件",IDC_STATIC,252,242,49,8
+    CONTROL         "*.wbk",IDC_TMP15,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,253,36,10
+    LTEXT           "Word备份文件",IDC_STATIC,252,254,49,8
+    CONTROL         "*.xlk",IDC_TMP16,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,265,36,10
+    LTEXT           "Excel备份文件",IDC_STATIC,252,266,53,8
+    CONTROL         "*.cdr_",IDC_TMP17,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,277,40,10
+    LTEXT           "Corel Draw备份文件",IDC_STATIC,252,278,73,8
+    CONTROL         "*.$$$",IDC_TMP18,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,289,36,10
+    LTEXT           "异常临时文件",IDC_STATIC,252,290,49,8
+    CONTROL         "*.@@@",IDC_TMP19,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,301,36,10
+    LTEXT           "异常临时文件",IDC_STATIC,252,302,49,8
+    CONTROL         "*.---",IDC_TMP20,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    205,313,36,10
+    LTEXT           "安装临时文件",IDC_STATIC,252,314,49,8
+    LTEXT           "清理磁盘",IDC_STATIC,209,24,33,8
+    COMBOBOX        IDC_DISK,250,21,47,92,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "开始扫描",IDC_BEGIN_SCANE,306,20,45,14,BS_FLAT
+    PUSHBUTTON      "停止扫描",IDC_STOP_SCANE,306,38,45,14,BS_FLAT
+    LISTBOX         IDC_DELETEINFO,7,236,166,94,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    GROUPBOX        "选择临时文件类型",IDC_STATIC,185,335,184,45
+    PUSHBUTTON      "全选",IDC_SELECTALL,209,351,50,14,BS_FLAT
+    PUSHBUTTON      "全否",IDC_CANCEL_SEL_ALL,271,351,50,14,BS_FLAT
+    GROUPBOX        "清理临时文件",IDC_STATIC,7,336,166,44
+    PUSHBUTTON      "全部删除",IDC_DELETE_ALL,30,353,50,14,BS_FLAT
+    PUSHBUTTON      "取消",IDC_EXIT,93,353,50,14,BS_FLAT
+    LTEXT           "",IDC_FINDPROGRESS,211,45,84,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ClearGarbage Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ClearGarbage\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ClearGarbage.EXE\0"
+            VALUE "ProductName", "ClearGarbage 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CLEARGARBAGE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 380
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 ClearGarbage(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ClearGarbage.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

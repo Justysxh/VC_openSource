@@ -1,0 +1,316 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (efedfb86).
+//
+// Gif.tlh
+//
+// C++ source equivalent of Win32 type library Gif.dll
+// compiler-generated file created 03/06/09 at 09:13:19 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace GIFLib {
+
+//
+// Forward references and typedefs
+//
+
+struct /* coclass */ CGif;
+struct __declspec(uuid("4ee73da0-6361-4b01-9d1c-c0e875c97237"))
+/* dual interface */ ICGif;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICGif, __uuidof(ICGif));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("55237d6b-afa9-4c08-b894-1c8ccbba029c"))
+CGif;
+    // [ default ] interface ICGif
+
+struct __declspec(uuid("4ee73da0-6361-4b01-9d1c-c0e875c97237"))
+ICGif : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBorderStyle,put=PutBorderStyle))
+    long BorderStyle;
+    __declspec(property(get=GetBorderColor,put=PutBorderColor))
+    OLE_COLOR BorderColor;
+    __declspec(property(get=GetBackStyle,put=PutBackStyle))
+    long BackStyle;
+    __declspec(property(get=GetBackColor,put=PutBackColor))
+    OLE_COLOR BackColor;
+    __declspec(property(get=GetAutoSize,put=PutAutoSize))
+    VARIANT_BOOL AutoSize;
+    __declspec(property(get=GetFileName,put=PutFileName))
+    _bstr_t FileName;
+    __declspec(property(get=GetValid,put=PutValid))
+    VARIANT_BOOL Valid;
+    __declspec(property(get=GetMousePointer,put=PutMousePointer))
+    long MousePointer;
+    __declspec(property(get=GetAppearance,put=PutAppearance))
+    short Appearance;
+    __declspec(property(get=GetBorderVisible,put=PutBorderVisible))
+    VARIANT_BOOL BorderVisible;
+    __declspec(property(get=GetCaption,put=PutCaption))
+    _bstr_t Caption;
+    __declspec(property(get=GetText,put=PutText))
+    _bstr_t Text;
+    __declspec(property(get=GetTabStop,put=PutTabStop))
+    VARIANT_BOOL TabStop;
+    __declspec(property(get=GetWindow))
+    long Window;
+    __declspec(property(get=GetEnabled,put=PutEnabled))
+    VARIANT_BOOL Enabled;
+    __declspec(property(get=GetForeColor,put=PutForeColor))
+    OLE_COLOR ForeColor;
+    __declspec(property(get=GetFillStyle,put=PutFillStyle))
+    long FillStyle;
+    __declspec(property(get=GetFillColor,put=PutFillColor))
+    OLE_COLOR FillColor;
+    __declspec(property(get=GetDrawWidth,put=PutDrawWidth))
+    long DrawWidth;
+    __declspec(property(get=GetDrawStyle,put=PutDrawStyle))
+    long DrawStyle;
+    __declspec(property(get=GetDrawMode,put=PutDrawMode))
+    long DrawMode;
+    __declspec(property(get=GetBorderWidth,put=PutBorderWidth))
+    long BorderWidth;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    void PutAutoSize (
+        VARIANT_BOOL pbool );
+    VARIANT_BOOL GetAutoSize ( );
+    void PutBackColor (
+        OLE_COLOR pclr );
+    OLE_COLOR GetBackColor ( );
+    void PutBackStyle (
+        long pstyle );
+    long GetBackStyle ( );
+    void PutBorderColor (
+        OLE_COLOR pclr );
+    OLE_COLOR GetBorderColor ( );
+    void PutBorderStyle (
+        long pstyle );
+    long GetBorderStyle ( );
+    void PutBorderWidth (
+        long width );
+    long GetBorderWidth ( );
+    void PutDrawMode (
+        long pmode );
+    long GetDrawMode ( );
+    void PutDrawStyle (
+        long pstyle );
+    long GetDrawStyle ( );
+    void PutDrawWidth (
+        long pwidth );
+    long GetDrawWidth ( );
+    void PutFillColor (
+        OLE_COLOR pclr );
+    OLE_COLOR GetFillColor ( );
+    void PutFillStyle (
+        long pstyle );
+    long GetFillStyle ( );
+    void PutRefFont (
+        IFontDisp * ppFont );
+    void PutFont (
+        IFontDisp * ppFont );
+    IFontDisp * GetFont ( );
+    void PutForeColor (
+        OLE_COLOR pclr );
+    OLE_COLOR GetForeColor ( );
+    void PutEnabled (
+        VARIANT_BOOL pbool );
+    VARIANT_BOOL GetEnabled ( );
+    long GetWindow ( );
+    void PutTabStop (
+        VARIANT_BOOL pbool );
+    VARIANT_BOOL GetTabStop ( );
+    void PutText (
+        _bstr_t pstrText );
+    _bstr_t GetText ( );
+    void PutCaption (
+        _bstr_t pstrCaption );
+    _bstr_t GetCaption ( );
+    void PutBorderVisible (
+        VARIANT_BOOL pbool );
+    VARIANT_BOOL GetBorderVisible ( );
+    void PutAppearance (
+        short pappearance );
+    short GetAppearance ( );
+    void PutMousePointer (
+        long ppointer );
+    long GetMousePointer ( );
+    void PutRefMouseIcon (
+        IPictureDisp * ppMouseIcon );
+    void PutMouseIcon (
+        IPictureDisp * ppMouseIcon );
+    IPictureDisp * GetMouseIcon ( );
+    void PutRefPicture (
+        IPictureDisp * ppPicture );
+    void PutPicture (
+        IPictureDisp * ppPicture );
+    IPictureDisp * GetPicture ( );
+    void PutValid (
+        VARIANT_BOOL pbool );
+    VARIANT_BOOL GetValid ( );
+    HRESULT LoadFromFile (
+        LPWSTR FileName );
+    _bstr_t GetFileName ( );
+    void PutFileName (
+        _bstr_t pVal );
+    void PutFName (
+        long hParent,
+        _bstr_t _arg2 );
+    HRESULT SaveToFile (
+        _bstr_t FileName );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall put_AutoSize (
+        VARIANT_BOOL pbool ) = 0;
+    virtual HRESULT __stdcall get_AutoSize (
+        VARIANT_BOOL * pbool ) = 0;
+    virtual HRESULT __stdcall put_BackColor (
+        OLE_COLOR pclr ) = 0;
+    virtual HRESULT __stdcall get_BackColor (
+        OLE_COLOR * pclr ) = 0;
+    virtual HRESULT __stdcall put_BackStyle (
+        long pstyle ) = 0;
+    virtual HRESULT __stdcall get_BackStyle (
+        long * pstyle ) = 0;
+    virtual HRESULT __stdcall put_BorderColor (
+        OLE_COLOR pclr ) = 0;
+    virtual HRESULT __stdcall get_BorderColor (
+        OLE_COLOR * pclr ) = 0;
+    virtual HRESULT __stdcall put_BorderStyle (
+        long pstyle ) = 0;
+    virtual HRESULT __stdcall get_BorderStyle (
+        long * pstyle ) = 0;
+    virtual HRESULT __stdcall put_BorderWidth (
+        long width ) = 0;
+    virtual HRESULT __stdcall get_BorderWidth (
+        long * width ) = 0;
+    virtual HRESULT __stdcall put_DrawMode (
+        long pmode ) = 0;
+    virtual HRESULT __stdcall get_DrawMode (
+        long * pmode ) = 0;
+    virtual HRESULT __stdcall put_DrawStyle (
+        long pstyle ) = 0;
+    virtual HRESULT __stdcall get_DrawStyle (
+        long * pstyle ) = 0;
+    virtual HRESULT __stdcall put_DrawWidth (
+        long pwidth ) = 0;
+    virtual HRESULT __stdcall get_DrawWidth (
+        long * pwidth ) = 0;
+    virtual HRESULT __stdcall put_FillColor (
+        OLE_COLOR pclr ) = 0;
+    virtual HRESULT __stdcall get_FillColor (
+        OLE_COLOR * pclr ) = 0;
+    virtual HRESULT __stdcall put_FillStyle (
+        long pstyle ) = 0;
+    virtual HRESULT __stdcall get_FillStyle (
+        long * pstyle ) = 0;
+    virtual HRESULT __stdcall putref_Font (
+        IFontDisp * ppFont ) = 0;
+    virtual HRESULT __stdcall put_Font (
+        IFontDisp * ppFont ) = 0;
+    virtual HRESULT __stdcall get_Font (
+        IFontDisp * * ppFont ) = 0;
+    virtual HRESULT __stdcall put_ForeColor (
+        OLE_COLOR pclr ) = 0;
+    virtual HRESULT __stdcall get_ForeColor (
+        OLE_COLOR * pclr ) = 0;
+    virtual HRESULT __stdcall put_Enabled (
+        VARIANT_BOOL pbool ) = 0;
+    virtual HRESULT __stdcall get_Enabled (
+        VARIANT_BOOL * pbool ) = 0;
+    virtual HRESULT __stdcall get_Window (
+        long * phwnd ) = 0;
+    virtual HRESULT __stdcall put_TabStop (
+        VARIANT_BOOL pbool ) = 0;
+    virtual HRESULT __stdcall get_TabStop (
+        VARIANT_BOOL * pbool ) = 0;
+    virtual HRESULT __stdcall put_Text (
+        BSTR pstrText ) = 0;
+    virtual HRESULT __stdcall get_Text (
+        BSTR * pstrText ) = 0;
+    virtual HRESULT __stdcall put_Caption (
+        BSTR pstrCaption ) = 0;
+    virtual HRESULT __stdcall get_Caption (
+        BSTR * pstrCaption ) = 0;
+    virtual HRESULT __stdcall put_BorderVisible (
+        VARIANT_BOOL pbool ) = 0;
+    virtual HRESULT __stdcall get_BorderVisible (
+        VARIANT_BOOL * pbool ) = 0;
+    virtual HRESULT __stdcall put_Appearance (
+        short pappearance ) = 0;
+    virtual HRESULT __stdcall get_Appearance (
+        short * pappearance ) = 0;
+    virtual HRESULT __stdcall put_MousePointer (
+        long ppointer ) = 0;
+    virtual HRESULT __stdcall get_MousePointer (
+        long * ppointer ) = 0;
+    virtual HRESULT __stdcall putref_MouseIcon (
+        IPictureDisp * ppMouseIcon ) = 0;
+    virtual HRESULT __stdcall put_MouseIcon (
+        IPictureDisp * ppMouseIcon ) = 0;
+    virtual HRESULT __stdcall get_MouseIcon (
+        IPictureDisp * * ppMouseIcon ) = 0;
+    virtual HRESULT __stdcall putref_Picture (
+        IPictureDisp * ppPicture ) = 0;
+    virtual HRESULT __stdcall put_Picture (
+        IPictureDisp * ppPicture ) = 0;
+    virtual HRESULT __stdcall get_Picture (
+        IPictureDisp * * ppPicture ) = 0;
+    virtual HRESULT __stdcall put_Valid (
+        VARIANT_BOOL pbool ) = 0;
+    virtual HRESULT __stdcall get_Valid (
+        VARIANT_BOOL * pbool ) = 0;
+    virtual HRESULT __stdcall raw_LoadFromFile (
+        LPWSTR FileName ) = 0;
+    virtual HRESULT __stdcall get_FileName (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall put_FileName (
+        BSTR pVal ) = 0;
+    virtual HRESULT __stdcall put_FName (
+        long hParent,
+        BSTR _arg2 ) = 0;
+    virtual HRESULT __stdcall raw_SaveToFile (
+        BSTR FileName ) = 0;
+};
+
+//
+// Named GUID constants initializations
+//
+
+extern "C" const GUID __declspec(selectany) LIBID_GIFLib =
+    {0x29117cb0,0xf3a1,0x4012,{0xac,0x94,0x96,0x64,0x14,0x7f,0xd6,0xfc}};
+extern "C" const GUID __declspec(selectany) CLSID_CGif =
+    {0x55237d6b,0xafa9,0x4c08,{0xb8,0x94,0x1c,0x8c,0xcb,0xba,0x02,0x9c}};
+extern "C" const GUID __declspec(selectany) IID_ICGif =
+    {0x4ee73da0,0x6361,0x4b01,{0x9d,0x1c,0xc0,0xe8,0x75,0xc9,0x72,0x37}};
+
+//
+// Wrapper method implementations
+//
+
+#include "Gif.tli"
+
+} // namespace GIFLib
+
+#pragma pack(pop)

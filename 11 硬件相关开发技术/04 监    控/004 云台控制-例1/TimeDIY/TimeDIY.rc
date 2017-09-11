@@ -1,0 +1,349 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TimeDIY.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TimeDIY.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\54.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 TimeDIY"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TimeDIY 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TIMEDIY_DIALOG DIALOGEX 0, 0, 422, 217
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "定时广角监控方案"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_PANEL,"Static",SS_BLACKFRAME,6,5,269,205
+    LTEXT           "开始时间",IDC_STATIC,308,23,33,8
+    CONTROL         "DateTimePicker1",IDC_DATETIMEPICKER1,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,352,20,48,
+                    15
+    PUSHBUTTON      "开始监控",IDC_STARTTAIL,293,43,48,16
+    PUSHBUTTON      "停止监控",IDC_STOPTAIL,352,43,48,16
+    CONTROL         "",IDC_MSCOMM,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,205,25,25,25
+    PUSHBUTTON      "云台控制",IDC_CloudMsg,293,70,48,16
+    PUSHBUTTON      "系统退出",IDC_QUIT,352,70,48,16
+    PUSHBUTTON      "上",IDC_UP,293,130,48,16
+    PUSHBUTTON      "下",IDC_DOWN,352,130,48,16
+    PUSHBUTTON      "左",IDC_LEFT,293,160,48,16
+    PUSHBUTTON      "右",IDC_RIGHT,352,160,48,16
+    GROUPBOX        "方向控制",IDC_STATIC,282,108,132,101
+    GROUPBOX        "定时控制",IDC_STATIC,282,5,132,94
+END
+
+IDD_CTRLFRM_DIALOG DIALOGEX 0, 0, 229, 311
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "控制码设置"
+FONT 10, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,6,7,216,68
+    GROUPBOX        "",IDC_STATIC,6,84,216,166
+    CONTROL         "端口号",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,26,21,
+                    27,9,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_PORT,60,18,73,66,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "环境设置",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,18,
+                    42,37,9,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_SETTINGS,60,40,73,17,ES_AUTOHSCROLL
+    CONTROL         "字节1",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,35,122,
+                    23,9,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_BYTE1,70,118,43,17,ES_AUTOHSCROLL
+    CONTROL         "字节2",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,123,122,
+                    23,9,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_BYTE2,150,118,43,17,ES_AUTOHSCROLL
+    CONTROL         "字节3",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,35,145,
+                    23,9,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_BYTE3,70,141,43,17,ES_AUTOHSCROLL
+    CONTROL         "字节4",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,123,145,
+                    23,9,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_BYTE4,150,141,43,17,ES_AUTOHSCROLL
+    CONTROL         "字节5",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,35,169,
+                    23,9,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_BYTE5,70,166,43,17,ES_AUTOHSCROLL
+    CONTROL         "字节6",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,123,169,
+                    23,9,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_BYTE6,150,166,43,17,ES_AUTOHSCROLL
+    CONTROL         "字节7",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,35,193,
+                    23,9,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_BYTE7,70,189,43,17,ES_AUTOHSCROLL
+    CONTROL         "字节8",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,123,193,
+                    23,9,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_BYTE8,150,189,43,17,ES_AUTOHSCROLL
+    CONTROL         "控制动作",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,22,
+                    96,43,9,WS_EX_TRANSPARENT
+    COMBOBOX        IDC_ACTIONS,70,94,123,66,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "设置",IDC_PORTSET,140,18,48,15,BS_FLAT
+    PUSHBUTTON      "设置",IDC_CMDSET,86,260,48,15,BS_FLAT
+    PUSHBUTTON      "取消",IDC_QUIT,145,260,48,15,BS_FLAT
+    CONTROL         "格式为2400,n,8,1",IDC_STATIC,"Static",SS_SIMPLE | 
+                    WS_GROUP,138,44,77,9
+    LTEXT           "   ★★★控制码中的8个字节数据应为16进制★★★\n★★★字节数与动作数的修改,需要重启应用程序★★★",
+                    IDC_STATIC,19,284,196,22,0,WS_EX_TRANSPARENT
+    CONTROL         "字节数",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,32,217,
+                    29,9,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_BYTENUM,70,214,43,17,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "动作数",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,119,
+                    217,29,9,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_ACTIONNUM,150,214,43,17,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TimeDIY Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TimeDIY\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2007\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TimeDIY.EXE\0"
+            VALUE "ProductName", "TimeDIY 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TIMEDIY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 415
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_CTRLFRM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 304
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TIMEDIY_DIALOG DLGINIT
+BEGIN
+    IDC_MSCOMM, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+IDD_CTRLFRM_DIALOG DLGINIT
+BEGIN
+    IDC_PORT, 0x403, 5, 0
+0x6f43, 0x316d, "\000" 
+    IDC_PORT, 0x403, 5, 0
+0x6f43, 0x326d, "\000" 
+    IDC_PORT, 0x403, 5, 0
+0x6f43, 0x336d, "\000" 
+    IDC_PORT, 0x403, 5, 0
+0x6f43, 0x346d, "\000" 
+    IDC_ACTIONS, 0x403, 3, 0
+0xcfc9, "\000" 
+    IDC_ACTIONS, 0x403, 3, 0
+0xc2cf, "\000" 
+    IDC_ACTIONS, 0x403, 3, 0
+0xf3d7, "\000" 
+    IDC_ACTIONS, 0x403, 3, 0
+0xd2d3, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xb9bd, 0xdbbe, 0xf5bc, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xb9bd, 0xdbbe, 0xf6d4, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xd4b6, 0xb9bd, 0xf5bc, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xd4b6, 0xb9bd, 0xf6d4, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xe2b9, 0xa6c8, 0xf5bc, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xe2b9, 0xa6c8, 0xf6d4, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xead3, 0xa2cb, 0xf5bc, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xead3, 0xa2cb, 0xf6d4, "\000" 
+    IDC_ACTIONS, 0x403, 7, 0
+0xa3cd, 0xb9d6, 0xbbce, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BKBUTTON            BITMAP  DISCARDABLE     "res\\按钮.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 TimeDIY(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\TimeDIY.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

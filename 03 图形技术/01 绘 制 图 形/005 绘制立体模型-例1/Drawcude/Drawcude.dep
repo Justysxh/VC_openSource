@@ -1,0 +1,22 @@
+# Microsoft Developer Studio Generated Dependency File, included by Drawcude.mak
+
+.\Drawcude.cpp : \
+	".\Drawcude.h"\
+	".\DrawcudeDlg.h"\
+	".\StdAfx.h"\
+	
+
+.\Drawcude.rc : \
+	".\res\Drawcude.ico"\
+	".\res\Drawcude.rc2"\
+	
+
+.\DrawcudeDlg.cpp : \
+	".\Drawcude.h"\
+	".\DrawcudeDlg.h"\
+	".\StdAfx.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	

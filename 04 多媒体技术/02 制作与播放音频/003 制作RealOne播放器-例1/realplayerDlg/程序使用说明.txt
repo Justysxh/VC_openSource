@@ -1,0 +1,1 @@
+运行本实例需要注册“Realplayer G2 Control”组件，该组件在安装完“Realplayer”播放器后在系统中存在。

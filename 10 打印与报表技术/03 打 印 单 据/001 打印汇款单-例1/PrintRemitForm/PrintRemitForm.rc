@@ -1,0 +1,263 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PrintRemitForm.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PrintRemitForm.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\APPLE EM.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 PrintRemitForm"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PrintRemitForm 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2006",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_PRINTREMITFORM_DIALOG DIALOGEX 0, 0, 401, 329
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "打印汇款单"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "长春市红旗街2001号",IDC_SENDADD,94,214,161,48
+    LTEXT           "详细地址",IDC_ADDRESS2,42,236,44,19
+    LTEXT           "汇款人",IDC_SENDPERSON,43,218,39,12
+    LTEXT           "收款人",IDC_REPERSON,42,176,44,13
+    LTEXT           "详细地址",IDC_ADDRESS,41,138,44,19
+    LTEXT           "",IDC_FRAME10,36,104,53,68
+    LTEXT           "汇款金额",IDC_TEXT9,36,83,53,23
+    LTEXT           "请按照背面注意事项携带本通知和本人有效证件名章到",
+                    IDC_TEXT3,29,48,103,17
+    LTEXT           "",IDC_FRAME2,15,32,253,281
+    LTEXT           "",IDC_FRAME20,16,81,21,231
+    LTEXT           "",IDC_FRAME19,268,67,107,57
+    LTEXT           "接受专号",IDC_STATIC,305,191,33,8
+    LTEXT           "兑付员",IDC_STATIC,341,163,25,8
+    LTEXT           "兑日期",IDC_STATIC,278,133,25,8
+    LTEXT           "收汇员",IDC_STATIC,343,114,25,8
+    LTEXT           "收汇日戳",IDC_STATIC,277,71,33,8
+    LTEXT           "王婻",IDC_RECEIVETEXT2,93,276,17,8
+    LTEXT           "姓名",IDC_RENAME3,42,294,44,13
+    LTEXT           "汇款人",IDC_SENDPEOPLE,41,279,44,13
+    LTEXT           "",IDC_FRAME18,36,272,53,42
+    LTEXT           "",IDC_FRAME17,89,208,177,64
+    LTEXT           "张宁",IDC_RECEIVETEXT,93,176,17,8
+    LTEXT           "",IDC_FRAME16,36,208,54,64
+    LTEXT           "",IDC_FRAME15,204,171,64,38
+    LTEXT           "",IDC_FRAME14,175,171,31,38
+    LTEXT           "",IDC_FRAME13,89,171,90,38
+    LTEXT           "姓名",IDC_RENAME,42,188,44,13
+    LTEXT           "",IDC_FRAME12,36,171,54,38
+    LTEXT           "长春市红旗街2001号",IDC_STATIC,97,108,167,55
+    LTEXT           "",IDC_FRAME11,89,104,178,67
+    LTEXT           "收款人",IDC_RECEIVE,43,120,39,12
+    LTEXT           "玖佰元整",IDC_MONEY,124,88,109,11
+    LTEXT           "人民币(大写)",IDC_STATIC,93,86,27,16
+    LTEXT           "",IDC_TEXT10,89,83,178,23
+    LTEXT           "",IDC_FRAME4,36,81,231,231
+    LTEXT           "金额要紧贴人民币三个字大写 数据间不留空隙",IDC_STATIC,
+                    22,89,8,162
+    LTEXT           "",IDC_FRAME3,15,83,253,233
+    LTEXT           "",IDC_FRAME8,321,49,54,18
+    LTEXT           "",IDC_FRAME7,321,32,54,17
+    LTEXT           "1",IDC_NUM1,5,5,20,18
+    LTEXT           "3",IDC_NUM2,31,5,20,18
+    LTEXT           "0",IDC_NUM3,57,5,20,18
+    LTEXT           "0",IDC_NUM4,83,5,20,18
+    LTEXT           "5",IDC_NUM5,109,5,20,18
+    LTEXT           "1",IDC_NUM6,135,5,20,18
+    LTEXT           "中华人民邮政汇款通知",IDC_TITLE,170,9,106,15
+    LTEXT           "",IDC_LINE2,134,55,67,8
+    LTEXT           "XXXXXXXXX",IDC_TEXT2,133,48,93,8
+    LTEXT           "局所",IDC_TEXT4,232,47,8,16
+    LTEXT           "领取",IDC_TEXT5,246,51,16,8
+    LTEXT           "汇票号码",IDC_TEXT7,277,37,37,8
+    LTEXT           "",IDC_TEXT6,268,32,53,17
+    LTEXT           "收汇局",IDC_TEXT8,277,55,37,8
+    LTEXT           "",IDC_FRAME6,268,49,53,18
+    LTEXT           "",IDC_FRAME1,268,32,107,172
+    LTEXT           "邮政编码",IDC_STATIC,305,208,33,8
+    PUSHBUTTON      "打印",IDC_PRINT,320,285,50,14,BS_FLAT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PrintRemitForm Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "PrintRemitForm\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2006\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PrintRemitForm.EXE\0"
+            VALUE "ProductName", "PrintRemitForm 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_PRINTREMITFORM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 393
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 322
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 PrintRemitForm(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\PrintRemitForm.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,13 @@
+1.在使用ADO技术时，需要导入一个ADO动态链接库msado15.dll，该动态库位于系统盘下的“Program Files\Common Files\System\ado\”目录下。
+
+
+例：如果你的系统盘为C盘，则该文件位于“C:\Program Files\Common Files\System\ado”目录中。所以需要打开工程文件，并展开“FileView”视图中的“Header Files”节点，然后双击“StdAfx.h”文件，将代码中的“d:\Program Files\Common Files\System\ado\msado15.dll”改为“c:\Program Files\Common Files\System\ado\msado15.dll”。
+
+
+
+2.设置ADO控件
+（1）在程序中选择ResourceView视图，打开“Dialog”节点下的“IDD_AFFAIR_DIALOG”对话框资源，右键单击ADO Data控件，在弹出的菜单中选择Properties菜单项，选择通用选项卡，单击“生成”按钮，在连接选项卡中单击“…”按钮，打开当前文件夹中的Access数据库，单击“测试连接”按钮，单击“确定”按钮。
+（2）右键单击DataGrid控件，在弹出的菜单中选择Properties菜单项，选择All选项卡，在DataSource项对应的Value值中重新选择IDC ADODC1项。
+
+
+

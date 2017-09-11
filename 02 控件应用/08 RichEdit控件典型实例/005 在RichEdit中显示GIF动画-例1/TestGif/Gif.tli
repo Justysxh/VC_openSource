@@ -1,0 +1,339 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (efedfb86).
+//
+// Gif.tli
+//
+// Wrapper implementations for Win32 type library Gif.dll
+// compiler-generated file created 03/06/09 at 09:13:19 - DO NOT EDIT!
+
+#pragma once
+
+//
+// interface ICGif wrapper method implementations
+//
+
+inline void ICGif::PutAutoSize ( VARIANT_BOOL pbool ) {
+    HRESULT _hr = put_AutoSize(pbool);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL ICGif::GetAutoSize ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_AutoSize(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutBackColor ( OLE_COLOR pclr ) {
+    HRESULT _hr = put_BackColor(pclr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR ICGif::GetBackColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_BackColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutBackStyle ( long pstyle ) {
+    HRESULT _hr = put_BackStyle(pstyle);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ICGif::GetBackStyle ( ) {
+    long _result;
+    HRESULT _hr = get_BackStyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutBorderColor ( OLE_COLOR pclr ) {
+    HRESULT _hr = put_BorderColor(pclr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR ICGif::GetBorderColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_BorderColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutBorderStyle ( long pstyle ) {
+    HRESULT _hr = put_BorderStyle(pstyle);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ICGif::GetBorderStyle ( ) {
+    long _result;
+    HRESULT _hr = get_BorderStyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutBorderWidth ( long width ) {
+    HRESULT _hr = put_BorderWidth(width);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ICGif::GetBorderWidth ( ) {
+    long _result;
+    HRESULT _hr = get_BorderWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutDrawMode ( long pmode ) {
+    HRESULT _hr = put_DrawMode(pmode);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ICGif::GetDrawMode ( ) {
+    long _result;
+    HRESULT _hr = get_DrawMode(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutDrawStyle ( long pstyle ) {
+    HRESULT _hr = put_DrawStyle(pstyle);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ICGif::GetDrawStyle ( ) {
+    long _result;
+    HRESULT _hr = get_DrawStyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutDrawWidth ( long pwidth ) {
+    HRESULT _hr = put_DrawWidth(pwidth);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ICGif::GetDrawWidth ( ) {
+    long _result;
+    HRESULT _hr = get_DrawWidth(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutFillColor ( OLE_COLOR pclr ) {
+    HRESULT _hr = put_FillColor(pclr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR ICGif::GetFillColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_FillColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutFillStyle ( long pstyle ) {
+    HRESULT _hr = put_FillStyle(pstyle);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ICGif::GetFillStyle ( ) {
+    long _result;
+    HRESULT _hr = get_FillStyle(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutRefFont ( IFontDisp * ppFont ) {
+    HRESULT _hr = putref_Font(ppFont);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void ICGif::PutFont ( IFontDisp * ppFont ) {
+    HRESULT _hr = put_Font(ppFont);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IFontDisp * ICGif::GetFont ( ) {
+    IFontDisp * _result;
+    HRESULT _hr = get_Font(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutForeColor ( OLE_COLOR pclr ) {
+    HRESULT _hr = put_ForeColor(pclr);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline OLE_COLOR ICGif::GetForeColor ( ) {
+    OLE_COLOR _result;
+    HRESULT _hr = get_ForeColor(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutEnabled ( VARIANT_BOOL pbool ) {
+    HRESULT _hr = put_Enabled(pbool);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL ICGif::GetEnabled ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_Enabled(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline long ICGif::GetWindow ( ) {
+    long _result;
+    HRESULT _hr = get_Window(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutTabStop ( VARIANT_BOOL pbool ) {
+    HRESULT _hr = put_TabStop(pbool);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL ICGif::GetTabStop ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_TabStop(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutText ( _bstr_t pstrText ) {
+    HRESULT _hr = put_Text(pstrText);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ICGif::GetText ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Text(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ICGif::PutCaption ( _bstr_t pstrCaption ) {
+    HRESULT _hr = put_Caption(pstrCaption);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline _bstr_t ICGif::GetCaption ( ) {
+    BSTR _result;
+    HRESULT _hr = get_Caption(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ICGif::PutBorderVisible ( VARIANT_BOOL pbool ) {
+    HRESULT _hr = put_BorderVisible(pbool);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL ICGif::GetBorderVisible ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_BorderVisible(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutAppearance ( short pappearance ) {
+    HRESULT _hr = put_Appearance(pappearance);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline short ICGif::GetAppearance ( ) {
+    short _result;
+    HRESULT _hr = get_Appearance(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutMousePointer ( long ppointer ) {
+    HRESULT _hr = put_MousePointer(ppointer);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline long ICGif::GetMousePointer ( ) {
+    long _result;
+    HRESULT _hr = get_MousePointer(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutRefMouseIcon ( IPictureDisp * ppMouseIcon ) {
+    HRESULT _hr = putref_MouseIcon(ppMouseIcon);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void ICGif::PutMouseIcon ( IPictureDisp * ppMouseIcon ) {
+    HRESULT _hr = put_MouseIcon(ppMouseIcon);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IPictureDisp * ICGif::GetMouseIcon ( ) {
+    IPictureDisp * _result;
+    HRESULT _hr = get_MouseIcon(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutRefPicture ( IPictureDisp * ppPicture ) {
+    HRESULT _hr = putref_Picture(ppPicture);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void ICGif::PutPicture ( IPictureDisp * ppPicture ) {
+    HRESULT _hr = put_Picture(ppPicture);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline IPictureDisp * ICGif::GetPicture ( ) {
+    IPictureDisp * _result;
+    HRESULT _hr = get_Picture(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline void ICGif::PutValid ( VARIANT_BOOL pbool ) {
+    HRESULT _hr = put_Valid(pbool);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline VARIANT_BOOL ICGif::GetValid ( ) {
+    VARIANT_BOOL _result;
+    HRESULT _hr = get_Valid(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _result;
+}
+
+inline HRESULT ICGif::LoadFromFile ( LPWSTR FileName ) {
+    HRESULT _hr = raw_LoadFromFile(FileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}
+
+inline _bstr_t ICGif::GetFileName ( ) {
+    BSTR _result;
+    HRESULT _hr = get_FileName(&_result);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _bstr_t(_result, false);
+}
+
+inline void ICGif::PutFileName ( _bstr_t pVal ) {
+    HRESULT _hr = put_FileName(pVal);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline void ICGif::PutFName ( long hParent, _bstr_t _arg2 ) {
+    HRESULT _hr = put_FName(hParent, _arg2);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+}
+
+inline HRESULT ICGif::SaveToFile ( _bstr_t FileName ) {
+    HRESULT _hr = raw_SaveToFile(FileName);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

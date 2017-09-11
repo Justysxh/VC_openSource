@@ -1,0 +1,5 @@
+（1）在程序中选择ResourceView视图，打开“Dialog”节点下的“IDD_DATEQUERY_DIALOG”对话框资源，右键单击ADO Data控件，在弹出的菜单中选择Properties菜单项，选择通用选项卡，单击“生成”按钮，在连接选项卡中单击“…”按钮，打开当前文件夹中的Access数据库，单击“测试连接”按钮，单击“确定”按钮。
+（2）右键单击DataGrid控件，在弹出的菜单中选择Properties菜单项，选择All选项卡，在DataSource项对应的Value值中重新选择IDC ADODC1项。
+
+
+

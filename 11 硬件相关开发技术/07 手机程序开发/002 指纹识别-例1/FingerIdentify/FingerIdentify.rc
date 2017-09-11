@@ -1,0 +1,244 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FingerIdentify.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\FingerIdentify.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 FingerIdentify"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "FingerIdentify 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_FINGERIDENTIFY_DIALOG DIALOGEX 0, 0, 358, 220
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "用指纹头设计身份识别系统"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "人员信息",IDC_STATIC,14,16,212,186
+    CONTROL         "",IDC_STATIC1,"Static",SS_BLACKRECT,242,18,92,93
+    PUSHBUTTON      "登记",IDC_BUTTON1,69,30,50,14
+    PUSHBUTTON      "添加",IDC_BUTTON2,16,30,50,14
+    PUSHBUTTON      "比对1:1",IDC_BUTTON3,122,30,50,14
+    PUSHBUTTON      "退出",IDC_BUTTON4,260,171,50,14
+    PUSHBUTTON      "关闭设备",IDC_BUTTON5,260,151,50,14
+    PUSHBUTTON      "打开设备",IDC_BUTTON6,260,131,50,14
+    LTEXT           "员工编号",IDC_STATIC,27,56,33,8
+    LTEXT           "员工姓名",IDC_STATIC,27,72,33,8
+    LTEXT           "员工部门",IDC_STATIC,27,88,33,8
+    EDITTEXT        IDC_EDIT1,69,53,117,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT2,69,69,117,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,69,85,117,14,ES_AUTOHSCROLL
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,23,111,
+                    192,82,WS_EX_STATICEDGE
+    CONTROL         "",IDC_ZKFPENGX1,"{CA69969C-2F27-41D3-954D-A48B941C3BA7}",
+                    WS_TABSTOP,322,183,16,16
+    PUSHBUTTON      "比对1:N",IDC_BUTTON7,175,30,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "FingerIdentify Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "FingerIdentify\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2009\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FingerIdentify.EXE\0"
+            VALUE "ProductName", "FingerIdentify 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_FINGERIDENTIFY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 213
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_FINGERIDENTIFY_DIALOG DLGINIT
+BEGIN
+    IDC_ZKFPENGX1, 0x376, 157, 0
+0x0000, 0x0000, 0x5054, 0x3046, 0x5408, 0x4b5a, 0x5046, 0x6e45, 0x0067, 
+0x4c04, 0x6665, 0x0274, 0x0300, 0x6f54, 0x0270, 0x0500, 0x6957, 0x7464, 
+0x0268, 0x0618, 0x6548, 0x6769, 0x7468, 0x1802, 0x450b, 0x726e, 0x6c6f, 
+0x436c, 0x756f, 0x746e, 0x0302, 0x530b, 0x6e65, 0x6f73, 0x4972, 0x646e, 
+0x7865, 0x0002, 0x5409, 0x7268, 0x7365, 0x6f68, 0x646c, 0x0a02, 0x4f11, 
+0x656e, 0x6f54, 0x6e4f, 0x5465, 0x7268, 0x7365, 0x6f68, 0x646c, 0x0a02, 
+0x4610, 0x726f, 0x6563, 0x6553, 0x6f63, 0x646e, 0x614d, 0x6374, 0x0968, 
+0x410c, 0x7475, 0x496f, 0x6564, 0x746e, 0x6669, 0x0879, 0x490d, 0x4973, 
+0x616d, 0x6567, 0x6843, 0x6e61, 0x6567, 0x0008, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 FingerIdentify(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\FingerIdentify.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

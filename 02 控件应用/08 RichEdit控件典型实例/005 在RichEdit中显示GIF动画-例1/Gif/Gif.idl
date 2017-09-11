@@ -1,0 +1,145 @@
+// Gif.idl : IDL source for Gif.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Gif.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+#include "olectl.h"
+	
+
+	[
+		object,
+		uuid(4EE73DA0-6361-4B01-9D1C-C0E875C97237),
+		dual,
+		helpstring("ICGif Interface"),
+		pointer_default(unique)
+	]
+	interface ICGif : IDispatch
+	{
+		[propput, id(DISPID_AUTOSIZE)]
+		HRESULT AutoSize([in]VARIANT_BOOL vbool);
+		[propget, id(DISPID_AUTOSIZE)]
+		HRESULT AutoSize([out,retval]VARIANT_BOOL* pbool);
+		[propput, id(DISPID_BACKCOLOR)]
+		HRESULT BackColor([in]OLE_COLOR clr);
+		[propget, id(DISPID_BACKCOLOR)]
+		HRESULT BackColor([out,retval]OLE_COLOR* pclr);
+		[propput, id(DISPID_BACKSTYLE)]
+		HRESULT BackStyle([in]long style);
+		[propget, id(DISPID_BACKSTYLE)]
+		HRESULT BackStyle([out,retval]long* pstyle);
+		[propput, id(DISPID_BORDERCOLOR)]
+		HRESULT BorderColor([in]OLE_COLOR clr);
+		[propget, id(DISPID_BORDERCOLOR)]
+		HRESULT BorderColor([out, retval]OLE_COLOR* pclr);
+		[propput, id(DISPID_BORDERSTYLE)]
+		HRESULT BorderStyle([in]long style);
+		[propget, id(DISPID_BORDERSTYLE)]
+		HRESULT BorderStyle([out, retval]long* pstyle);
+		[propput, id(DISPID_BORDERWIDTH)]
+		HRESULT BorderWidth([in]long width);
+		[propget, id(DISPID_BORDERWIDTH)]
+		HRESULT BorderWidth([out, retval]long* width);
+		[propput, id(DISPID_DRAWMODE)]
+		HRESULT DrawMode([in]long mode);
+		[propget, id(DISPID_DRAWMODE)]
+		HRESULT DrawMode([out, retval]long* pmode);
+		[propput, id(DISPID_DRAWSTYLE)]
+		HRESULT DrawStyle([in]long style);
+		[propget, id(DISPID_DRAWSTYLE)]
+		HRESULT DrawStyle([out, retval]long* pstyle);
+		[propput, id(DISPID_DRAWWIDTH)]
+		HRESULT DrawWidth([in]long width);
+		[propget, id(DISPID_DRAWWIDTH)]
+		HRESULT DrawWidth([out, retval]long* pwidth);
+		[propput, id(DISPID_FILLCOLOR)]
+		HRESULT FillColor([in]OLE_COLOR clr);
+		[propget, id(DISPID_FILLCOLOR)]
+		HRESULT FillColor([out, retval]OLE_COLOR* pclr);
+		[propput, id(DISPID_FILLSTYLE)]
+		HRESULT FillStyle([in]long style);
+		[propget, id(DISPID_FILLSTYLE)]
+		HRESULT FillStyle([out, retval]long* pstyle);
+		[propputref, id(DISPID_FONT)]
+		HRESULT Font([in]IFontDisp* pFont);
+		[propput, id(DISPID_FONT)]
+		HRESULT Font([in]IFontDisp* pFont);
+		[propget, id(DISPID_FONT)]
+		HRESULT Font([out, retval]IFontDisp** ppFont);
+		[propput, id(DISPID_FORECOLOR)]
+		HRESULT ForeColor([in]OLE_COLOR clr);
+		[propget, id(DISPID_FORECOLOR)]
+		HRESULT ForeColor([out,retval]OLE_COLOR* pclr);
+		[propput, id(DISPID_ENABLED)]
+		HRESULT Enabled([in]VARIANT_BOOL vbool);
+		[propget, id(DISPID_ENABLED)]
+		HRESULT Enabled([out,retval]VARIANT_BOOL* pbool);
+		[propget, id(DISPID_HWND)]
+		HRESULT Window([out, retval]long* phwnd);
+		[propput, id(DISPID_TABSTOP)]
+		HRESULT TabStop([in]VARIANT_BOOL vbool);
+		[propget, id(DISPID_TABSTOP)]
+		HRESULT TabStop([out, retval]VARIANT_BOOL* pbool);
+		[propput, id(DISPID_TEXT)]
+		HRESULT Text([in]BSTR strText);
+		[propget, id(DISPID_TEXT)]
+		HRESULT Text([out, retval]BSTR* pstrText);
+		[propput, id(DISPID_CAPTION)]
+		HRESULT Caption([in]BSTR strCaption);
+		[propget, id(DISPID_CAPTION)]
+		HRESULT Caption([out,retval]BSTR* pstrCaption);
+		[propput, id(DISPID_BORDERVISIBLE)]
+		HRESULT BorderVisible([in]VARIANT_BOOL vbool);
+		[propget, id(DISPID_BORDERVISIBLE)]
+		HRESULT BorderVisible([out, retval]VARIANT_BOOL* pbool);
+		[propput, id(DISPID_APPEARANCE)]
+		HRESULT Appearance([in]short appearance);
+		[propget, id(DISPID_APPEARANCE)]
+		HRESULT Appearance([out, retval]short* pappearance);
+		[propput, id(DISPID_MOUSEPOINTER)]
+		HRESULT MousePointer([in]long pointer);
+		[propget, id(DISPID_MOUSEPOINTER)]
+		HRESULT MousePointer([out, retval]long* ppointer);
+		[propputref, id(DISPID_MOUSEICON)]
+		HRESULT MouseIcon([in]IPictureDisp* pMouseIcon);
+		[propput, id(DISPID_MOUSEICON)]
+		HRESULT MouseIcon([in]IPictureDisp* pMouseIcon);
+		[propget, id(DISPID_MOUSEICON)]
+		HRESULT MouseIcon([out, retval]IPictureDisp** ppMouseIcon);
+		[propputref, id(DISPID_PICTURE)]
+		HRESULT Picture([in]IPictureDisp* pPicture);
+		[propput, id(DISPID_PICTURE)]
+		HRESULT Picture([in]IPictureDisp* pPicture);
+		[propget, id(DISPID_PICTURE)]
+		HRESULT Picture([out, retval]IPictureDisp** ppPicture);
+		[propput, id(DISPID_VALID)]
+		HRESULT Valid([in]VARIANT_BOOL vbool);
+		[propget, id(DISPID_VALID)]
+		HRESULT Valid([out, retval]VARIANT_BOOL* pbool);
+		[id(1), helpstring("method LoadFromFile")] HRESULT LoadFromFile(LPCTSTR FileName);
+		[propget, id(2), helpstring("property FileName")] HRESULT FileName([out, retval] BSTR *pVal);
+		[propput, id(2), helpstring("property FileName")] HRESULT FileName([in] BSTR newVal);
+		[propput, id(4), helpstring("property FName")] HRESULT FName(long hParent, [in] BSTR newVal);
+		[id(5), helpstring("method SaveToFile")] HRESULT SaveToFile(BSTR FileName);
+	};
+
+[
+	uuid(29117CB0-F3A1-4012-AC94-9664147FD6FC),
+	version(1.0),
+	helpstring("Gif 1.0 Type Library")
+]
+library GIFLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	[
+		uuid(55237D6B-AFA9-4C08-B894-1C8CCBBA029C),
+		helpstring("CGif Class")
+	]
+	coclass CGif
+	{
+		[default] interface ICGif;
+	};
+};

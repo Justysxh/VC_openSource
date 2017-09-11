@@ -1,0 +1,31 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "RevertPicture"=".\RevertPicture.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+    {94EA194E-07D6-4F21-8CC1-EEEF83EE416E}
+    {662CA9D6-A177-44D4-A7BA-E6E477C95A39}
+}}}
+
+###############################################################################
+
